@@ -15,9 +15,26 @@ namespace Project11
             int number = oldNUmbers[2];
             Console.WriteLine(number);
             int i = 0;
-            for(;i < 5; i++)
+            for (; i < 5; i++) // print all numbers
             {
-                Console.WriteLine(oldNUmbers[i]);
+                switch (oldNUmbers[i])
+                {
+                    case 1:
+                        Console.WriteLine("1st\n");
+                        break;
+                    case 2:
+                        Console.WriteLine("2nd\n");
+                        break;
+                    case 3:
+                        Console.WriteLine("3rd\n");
+                        break;
+                    case 4:
+                        Console.WriteLine("4th\n");
+                        break;
+                    default:
+                        Console.WriteLine("5th\n");
+                        break;
+                }
             }
             Console.ReadKey();
             //Console.ReadKey();
