@@ -17,7 +17,10 @@ namespace Project11
             int i = 0;
             for(;i < 5; i++)
             {
-                Console.WriteLine(oldNUmbers[i]);
+                if (oldNUmbers[i] % 2 == 0)
+                    Console.WriteLine("Even");
+                else
+                    Console.WriteLine("Odd");
             }
             Console.ReadKey();
             //Console.ReadKey();
