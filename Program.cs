@@ -19,6 +19,18 @@ namespace Project11
             {
                 Console.WriteLine(oldNUmbers[i]);
             }
+            while (i < 5)
+            {
+                Console.WriteLine(oldNUmbers[i]);
+                //Console.WriteLine("\n");
+                i += 1;
+            }
+            i = 0;
+            do
+            {
+                Console.WriteLine(oldNUmbers[i]);
+                i += 1;
+            } while (oldNUmbers[i] > 4);
             Console.ReadKey();
             //Console.ReadKey();
         }
