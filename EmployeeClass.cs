@@ -8,9 +8,21 @@ namespace Project11
 {
     class Employee
     {
-        public string _name;
-        public int _id;
-        public string _address;
+        public string _name
+        {
+            get;
+            set;
+        }
+        public int _id
+        {
+            get;
+            set;
+        }
+        public string _address
+        {
+            get;
+            set;
+        }
 
         public void AcceptDetails()
         {
