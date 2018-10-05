@@ -14,16 +14,29 @@ namespace Project11
         {
             List<Employee> emplist = new List<Employee>();
             int i = 0;
-            while (i <= 5)
+
+            while (i <= 1)
             {
-                Employee obj = new Employee();
-                obj.AcceptDetails();
+                Employee obj = new Employee()
+                {
+                    _name = Console.ReadLine(),
+                    _id = Convert.ToInt32(Console.ReadLine()),
+                    _address = Console.ReadLine()
+                };
                 emplist.Add(obj);
                 i++;
+            }
+            Console.WriteLine(emplist.Capacity);
+            foreach (var item in emplist)
+            {
+                Console.WriteLine(item._name);
+                Console.WriteLine(item._id);
+                Console.WriteLine(item._address);
             }
             IEnumerator enumerator = emplist.GetEnumerator();
             while (enumerator.MoveNext())
             {
+
                 Employee obj1 = (Employee)enumerator.Current;
                 //obj1.ShowDetails();
                 Console.WriteLine(obj1._name);
