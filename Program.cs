@@ -12,13 +12,14 @@ namespace Project11
         string _Model;
         int _speed;
         double _EnginePower;
-        public void AcceptCarDetails(string Brand, string Model, int Speed, double EnginePower)
+        public void AcceptCarDetails()
         {
-            _Brand = Brand;
-            _Model = Model;
-            _speed = Speed;
-            _EnginePower = EnginePower;
+            _Brand = Console.ReadLine();
+            _Model = Console.ReadLine();
+            _speed = Convert.ToInt32(Console.ReadLine());
+            _EnginePower = Convert.ToDouble(Console.ReadLine());
         }
+
         public void DisplayCarDetails()
         {
             Console.Write($"Brand: {_Brand} \n Model: {_Model} \n Speed: {_speed} \n EnginePower: {_EnginePower} \n");
@@ -30,7 +31,7 @@ namespace Project11
         static void Main(string[] args)
         {
             car newcar = new car();
-            newcar.AcceptCarDetails("Honda", "RXTX", 50, 700.00);
+            newcar.AcceptCarDetails();
             newcar.DisplayCarDetails();
         }
     }
