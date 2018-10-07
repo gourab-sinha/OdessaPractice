@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,21 +7,18 @@ using System.Threading.Tasks;
 
 namespace Project11
 {
+
     class Program
     {
+        public void Show()
+        {
+            Console.WriteLine("This is non parameterized function");
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World");
-            int[] oldNUmbers = { 1, 2, 3, 4, 5 };
-            int number = oldNUmbers[2];
-            Console.WriteLine(number);
-            int i = 0;
-            for(;i < 5; i++)
-            {
-                Console.WriteLine(oldNUmbers[i]);
-            }
+            Program obj = new Program();
+            obj.Show();
             Console.ReadKey();
-            //Console.ReadKey();
         }
     }
 }
