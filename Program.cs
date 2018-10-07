@@ -10,14 +10,14 @@ namespace Project11
 
     class Program
     {
-        public void Show()
+        public void Show(int x)
         {
-            Console.WriteLine("This is non parameterized function");
+            Console.WriteLine(x);
         }
         static void Main(string[] args)
         {
             Program obj = new Program();
-            obj.Show();
+            obj.Show(5);
             Console.ReadKey();
         }
     }
